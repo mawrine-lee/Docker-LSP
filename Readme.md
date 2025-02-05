@@ -1,4 +1,4 @@
-#Prerequisite
+# Prerequisite
 - OS Ubuntu focal/jammy
 - Docker installed on VM, refer to here: https://docs.docker.com/engine/install/ubuntu/
 
@@ -15,6 +15,7 @@
 
 # Run After container up
 
+```
 docker-compose exec app ls -l (make sure you see group owner is your user)
 docker-compose exec app rm -rf vendor composer.lock
 docker-compose exec app composer install
@@ -22,3 +23,4 @@ docker-compose exec app php artisan key:generate
 docker-compose exec app php artisan migrate:fresh
 docker-compose exec app php artisan migrate:fresh --seed
 docker-compose exec app php artisan db:seed --class=UserSeeder
+```
