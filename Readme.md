@@ -1,8 +1,9 @@
 # Prerequisite
 - OS Ubuntu focal/jammy
 - Docker installed on VM, refer to here: https://docs.docker.com/engine/install/ubuntu/
+- For detail configuration, refer here: https://www.digitalocean.com/community/tutorials/how-to-install-and-set-up-laravel-with-docker-compose-on-ubuntu-22-04
 
-#Steps
+# Steps
 1. Clone your source code into VM
 2. List folder & enter the source code folder
 3. Change owner of folder, into user you will create later in docker-compose 
